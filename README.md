@@ -1,10 +1,3 @@
-# N2-AT2 — Inteligência Artificial I
-## Previsão de Preços de Diamantes: Análise Comparativa entre Regressão Linear e Random Forest
-
-Este repositório contém o projeto prático desenvolvido para a avaliação **N2-AT2** da disciplina de **Inteligência Artificial I**. O objetivo do trabalho é aplicar e comparar técnicas de Aprendizado de Máquina Supervisionado (Regressão) para estimar o valor comercial de diamantes a partir de suas propriedades gemológicas e físicas.
-
----
-
 ### 1. Descrição do Problema
 O valor de mercado de um diamante é tradicionalmente estimado através dos **4Cs** (*Carat*, *Cut*, *Color*, *Clarity*) e de suas medições tridimensionais (*depth*, *table*, *x*, *y*, *z*). A determinação humana de preço está sujeita a alta subjetividade e discrepâncias. O aprendizado de máquina oferece uma abordagem quantitativa, objetiva e escalável. 
 
