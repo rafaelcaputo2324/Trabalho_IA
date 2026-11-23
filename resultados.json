@@ -1,0 +1,127 @@
+{
+  "base": {
+    "n_registros": 53940,
+    "n_atributos": 10,
+    "ausentes": 0,
+    "duplicados": 146,
+    "dimensao_zero": 20,
+    "assimetria_preco": 1.618395283380216,
+    "assimetria_log_preco": 0.11696238356958863
+  },
+  "preprocessamento": {
+    "removidos_duplicatas": 146,
+    "removidos_invalidos": 22,
+    "registros_finais": 53772,
+    "n_treino": 43017,
+    "n_teste": 10755
+  },
+  "cv": {
+    "Regressão Linear": {
+      "MAE": [801.060, 5.119],
+      "RMSE": [1207.564, 23.911],
+      "R2": [0.909, 0.003]
+    },
+    "Random Forest (base)": {
+      "MAE": [271.929, 4.486],
+      "RMSE": [551.452, 14.480],
+      "R2": [0.981, 0.001]
+    }
+  },
+  "melhores_hiperparametros": {
+    "n_estimators": 200,
+    "min_samples_leaf": 1,
+    "max_features": 0.7,
+    "max_depth": null
+  },
+  "tempo_busca_s": 156.0,
+  "modelos": {
+    "Regressão Linear": {
+      "teste": {
+        "MAE": 797.908,
+        "RMSE": 1215.800,
+        "MSE": 1478169.729,
+        "R2": 0.905
+      },
+      "treino": {
+        "MAE": 794.132,
+        "RMSE": 1205.210,
+        "MSE": 1452531.144,
+        "R2": 0.909
+      },
+      "tempo_treino_s": 0.013,
+      "tempo_pred_s": 0.002
+    },
+    "Random Forest (base)": {
+      "teste": {
+        "MAE": 264.682,
+        "RMSE": 524.777,
+        "MSE": 275390.421,
+        "R2": 0.982
+      },
+      "treino": {
+        "MAE": 100.812,
+        "RMSE": 218.441,
+        "MSE": 47716.471,
+        "R2": 0.997
+      },
+      "tempo_treino_s": 7.549,
+      "tempo_pred_s": 0.208
+    },
+    "Random Forest (ajustado)": {
+      "teste": {
+        "MAE": 263.000,
+        "RMSE": 519.491,
+        "MSE": 269871.139,
+        "R2": 0.983
+      },
+      "treino": {
+        "MAE": 105.120,
+        "RMSE": 223.110,
+        "MSE": 49778.072,
+        "R2": 0.997
+      },
+      "tempo_treino_s": 10.755,
+      "tempo_pred_s": 0.429
+    },
+    "Regressão Linear (alvo log)": {
+      "teste": {
+        "MAE": 457.794,
+        "RMSE": 876.757,
+        "MSE": 768702.580,
+        "R2": 0.951
+      },
+      "treino": {
+        "MAE": 453.210,
+        "RMSE": 868.420,
+        "MSE": 754153.284,
+        "R2": 0.950
+      },
+      "tempo_treino_s": 0.014,
+      "tempo_pred_s": 0.002
+    }
+  },
+  "previsoes_negativas_lr": 888,
+  "faixas": [
+    { "modelo": "Random Forest (base)", "faixa": "< 1k", "n": 2926, "MAE": 38.8, "MAPE": 5.6 },
+    { "modelo": "Random Forest (base)", "faixa": "1k–2.5k", "n": 2544, "MAE": 102.8, "MAPE": 6.1 },
+    { "modelo": "Random Forest (base)", "faixa": "2.5k–5k", "n": 2384, "MAE": 266.5, "MAPE": 7.3 },
+    { "modelo": "Random Forest (base)", "faixa": "5k–10k", "n": 1917, "MAE": 478.9, "MAPE": 6.9 },
+    { "modelo": "Random Forest (base)", "faixa": "> 10k", "n": 984, "MAE": 933.2, "MAPE": 6.9 },
+    { "modelo": "Regressão Linear", "faixa": "< 1k", "n": 2926, "MAE": 651.7, "MAPE": 102.2 },
+    { "modelo": "Regressão Linear", "faixa": "1k–2.5k", "n": 2544, "MAE": 526.7, "MAPE": 35.4 },
+    { "modelo": "Regressão Linear", "faixa": "2.5k–5k", "n": 2384, "MAE": 611.7, "MAPE": 17.1 },
+    { "modelo": "Regressão Linear", "faixa": "5k–10k", "n": 1917, "MAE": 905.7, "MAPE": 12.9 },
+    { "modelo": "Regressão Linear", "faixa": "> 10k", "n": 984, "MAE": 2175.1, "MAPE": 15.5 }
+  ],
+  "importancia_rf": {
+    "carat": 0.5898,
+    "y": 0.2969,
+    "clarity": 0.0633,
+    "color": 0.0327,
+    "z": 0.0053,
+    "x": 0.0048,
+    "depth": 0.0030,
+    "table": 0.0023,
+    "cut": 0.0018
+  }
+}
